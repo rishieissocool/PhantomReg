@@ -81,7 +81,7 @@ python phantom_reg.py <payload_file> --obfuscate --obf_length_kb <length> --reg_
 An example command to generate a malicious payload with 512 KB obfuscation and a custom filename would be:
 
 ```bash
-python phantom_reg.py payload.bin --obfuscate --obf_length_kb 512 --reg_filename "malicious_payload.reg" --misleading_name "SUSPICIOUS FILE"
+python phantom_reg.py payload.exe --obfuscate --obf_length_kb 512 --reg_filename "malicious_payload.reg" --misleading_name "SUSPICIOUS FILE"
 ```
 
 This will create a `.reg` file with the specified settings.
